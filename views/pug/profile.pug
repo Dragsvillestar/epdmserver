@@ -1,0 +1,9 @@
+doctype html
+html
+    head
+        title Profile Page
+    body
+        h1 Welcome to Your Profile, #{user ? user.username : "Guest"}
+        p Position: #{user ? user.position : "Not provided"}
+        p Email: #{user ? user.email : "Not provided"}
+        p Phone: #{user ? user.phone : "Not provided"}
